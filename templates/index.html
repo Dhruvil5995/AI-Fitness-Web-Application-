@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Fitness Application</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> 
+</head>
+
+<body style="background: rgb(114, 114, 114);">
+    <div class="login">
+      <h1>Fitness Application</h1>
+        <form action="{{ url_for('predict')}}"method="post">
+          <input type="number" step="0.1" name="height" placeholder="Enter your Height in CM's " required="required" />
+          <input type="number" step="0.1" name="weight" placeholder="Enter your Weight in KG's " required="required" />
+          <button type="submit" class="btn btn-primary btn-block btn-large">Calculate BMI </button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Fitness Application</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+
+<body style="background: rgb(114, 114, 114);">
+    <table>
+        <form>
+            <tr>
+                <td>
+                    <div style="display: 50%;">
+                        <h3>BMI value and Weight Class</h3>
+                        <h3>BMI Value : {{ BMI_Value }}</h3>
+                        <h3>Weight Class : {{ Class_Value }}</h3>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <h1>Live Streaming</h1>
+                      
+                        <img src="{{ url_for('video',bmi=BMI_Value) }}" width="50%"/ style=" height:fit-content; width:fit-content;">
+                    </div>
+                </td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>
