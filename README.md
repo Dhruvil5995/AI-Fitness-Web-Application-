@@ -28,10 +28,10 @@ Mediapipe
 
 # Usage
 
-# Navigate to the web application URL in your browser.
-# Enter your height and weight in the appropriate fields.
-# Click on the "Calculate BMI" button to get your BMI score and weight category.
-# The application will provide you with a personalized exercise plan based on your weight category.
-# Stand between two red line and move your self back or forward until red line turns into green
-# When it is green then strat Exercise 
-# The repetition calculator will provide you with the recommended number of repetitions for each exercise.
+#### Navigate to the web application URL in your browser.
+#### Enter your height and weight in the appropriate fields.
+#### Click on the "Calculate BMI" button to get your BMI score and weight category.
+#### The application will provide you with a personalized exercise plan based on your weight category.
+#### Stand between two red line and move your self back or forward until red line turns into green
+#### When it is green then strat Exercise 
+#### The repetition calculator will provide you with the recommended number of repetitions for each exercise.
